@@ -1,0 +1,8 @@
+<Solution>
+  <Project Path="Habit.Core/Habit.Core.csproj" Id="ebd6ca1b-fb38-4d33-bb92-771a401d193e" />
+  <Project Path="Habit.Repository/Habit.Repository.csproj" Id="cb87be5d-404a-4076-909e-7b3c5d966b61">
+    <BuildDependency Project="Habit.Core/Habit.Core.csproj" />
+  </Project>
+  <Project Path="Habit.Services/Habit.Services.csproj" Id="8c13e17b-2dab-42c9-b193-0814b50fe360" />
+  <Project Path="ReHabit.Api/ReHabit.Api.csproj" Id="1ac7c809-eb19-4e0a-8288-383882e9d75d" />
+</Solution>

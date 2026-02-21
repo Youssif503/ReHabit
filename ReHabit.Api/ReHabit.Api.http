@@ -1,0 +1,6 @@
+@ReHabit.Api_HostAddress = http://localhost:5124
+
+GET {{ReHabit.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
