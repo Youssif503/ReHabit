@@ -8,7 +8,6 @@ namespace Habit.Core
     public interface IUnitOfWork:IAsyncDisposable
     {
         public IHabitRepository Habits { get;}
-        public IUserRepository Users { get; }
 
         Task<int> SaveChangesAsync();
         Task BeginTransactionAsync();
