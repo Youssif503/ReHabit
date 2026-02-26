@@ -57,7 +57,7 @@ namespace ReHabit.Api.Controllers
             });
 
         }
-        [HttpGet("Register")]
+        [HttpPost("register")]
         public async Task<IActionResult> Register(UserRegisterDto registerUser, IFormFile image)
         {
             var isExistUser = await _userManager.FindByEmailAsync(registerUser.Email);
@@ -115,6 +115,7 @@ namespace ReHabit.Api.Controllers
                 Token = await _authService.CreateTokenAsync(user)
             });
         }
+        [HttpPut("update-password")]
         public async Task<IActionResult> UpdateUserPassword(string currentPassword, string newPassword)
         {
             var userId = User.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier)?.Value;
