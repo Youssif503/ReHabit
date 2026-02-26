@@ -11,6 +11,6 @@ namespace ReHabit.Habit.Core.Models
         public User? User { get; set; }
         public int HabitId { get; set; }
         [ForeignKey("HabitId")]
-        public Habit? Habit { get; set; }
+        public HabitModel? Habit { get; set; }
     }
 }

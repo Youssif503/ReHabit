@@ -17,10 +17,9 @@ namespace Habit.Repository
         {
             _context = context;
             Habits = new HabitRepository(_context);
-            Users = new UserRepository(_context);
+
         }
         public IHabitRepository Habits { get;private set; }
-        public IUserRepository Users { get; private set; }
 
         public async Task BeginTransactionAsync()
         {
